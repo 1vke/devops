@@ -1,4 +1,4 @@
-export default function factorial(n) {
+function factorial(n) {
     if (n < 0) {
         throw RangeError("Input number needs to be a non-zero positive number");
     } else if (n === 0 || n === 1) {
@@ -7,3 +7,5 @@ export default function factorial(n) {
         return n * factorial(n - 1);
     }
 }
+
+exports.factorial = factorial
