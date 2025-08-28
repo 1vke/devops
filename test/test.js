@@ -11,7 +11,7 @@ describe('Regular factorial value', function() {
 });
 
 describe('Irregular factorial value', function() {
-    it('should throw error when number is negative or zero', function() {
-        assert.throws(main.factorial(0));
+    it('should throw error when number is negative', function() {
+        assert.throws(() => {main.factorial(-1)});
     });
 });
